@@ -10,9 +10,8 @@ export default function Index() {
     <>
       <header className="flex justify-between container py-4">
         <span className="text-slate-900 font-bold">SuperB</span>
-
         <Link
-          to="/dashboard"
+          to="/dashboard/budget"
           className="rounded-full bg-tremor-brand py-2 px-4 font-semibold"
         >
           Dashboard
@@ -31,7 +30,7 @@ export default function Index() {
             </p>
 
             <Link
-              to="/dashboard"
+              to="/dashboard/budget"
               className="rounded-full bg-tremor-brand py-2 px-4 font-semibold text-lg"
             >
               Get started
@@ -43,6 +42,7 @@ export default function Index() {
           </Card>
         </section>
       </main>
+
       <footer className="container">
         <p>© 2021 Brand</p>
       </footer>
