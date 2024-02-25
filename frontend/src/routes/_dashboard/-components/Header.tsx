@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="w-full">
-      <h1 className="text-slate-800 text-4xl">{name}</h1>
+      <h1 className="text-slate-800 text-2xl mb-2">{name}</h1>
     </header>
   );
 }

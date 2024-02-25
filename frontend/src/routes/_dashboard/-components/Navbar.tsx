@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex p-4 fixed sm:static sm:h-full sm:flex sm:flex-col bottom-1 w-full sm:w-[300px] rounded-lg bg-slate-700">
-      <div className="mb-10 text-4xl font-semibold p-4">Superb</div>
+      <div className="mb-10 text-4xl font-semibold p-4 text-white">MyMoney</div>
       <ul className="flex sm:flex-col gap-1 w-full">
         {links.map((link) => (
           <NavbarLink key={link.href} name={link.name} href={link.href} />
