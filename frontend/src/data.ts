@@ -33,17 +33,7 @@ export const SUBSCRIPTIONS: Subscription[] = [
     paymentDate: "2021-12-01",
     startDate: "2021-01-01",
   },
-  {
-    id: 3,
-    name: "Hulu",
-    catergory: "Streaming",
-    cost: 10,
-    paymentFrequency: "Monthly",
-    active: true,
-    paymentMethod: "Credit Card",
-    paymentDate: "2021-12-01",
-    startDate: "2021-01-01",
-  },
+
   {
     id: 4,
     name: "Disney+",
@@ -66,20 +56,10 @@ export const SUBSCRIPTIONS: Subscription[] = [
     paymentDate: "2021-12-01",
     startDate: "2021-01-01",
   },
-  {
-    id: 6,
-    name: "Amazon Prime",
-    catergory: "Streaming",
-    cost: 10,
-    paymentFrequency: "Monthly",
-    active: true,
-    paymentMethod: "Credit Card",
-    paymentDate: "2021-12-01",
-    startDate: "2021-01-01",
-  },
+
   {
     id: 7,
-    name: "HBO Max",
+    name: "Binge",
     catergory: "Streaming",
     cost: 10,
     paymentFrequency: "Monthly",

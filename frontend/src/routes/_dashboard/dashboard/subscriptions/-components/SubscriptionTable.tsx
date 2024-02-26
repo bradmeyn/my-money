@@ -11,6 +11,7 @@ import {
 
 import { type Subscription } from "../../../../../data";
 import { formatAsCurrency } from "../../../../../utils";
+import SubscriptionAdd from "./SubscriptionAdd";
 
 export default function SubscriptionTable({
   subscriptions,
@@ -19,7 +20,6 @@ export default function SubscriptionTable({
 }) {
   return (
     <Card>
-      <h2 className="text-md text-slate-500 font-semibold">Subscriptions</h2>
       <Table>
         <TableHead>
           <TableRow>
@@ -40,6 +40,7 @@ export default function SubscriptionTable({
           ))}
         </TableBody>
       </Table>
+      <SubscriptionAdd />
     </Card>
   );
 }
