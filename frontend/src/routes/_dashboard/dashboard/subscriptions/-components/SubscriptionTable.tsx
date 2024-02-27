@@ -28,7 +28,6 @@ export default function SubscriptionTable({
             <TableHeaderCell>Frequency</TableHeaderCell>
             <TableHeaderCell>Payment Date</TableHeaderCell>
             <TableHeaderCell>Status</TableHeaderCell>
-            <TableHeaderCell>Started</TableHeaderCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -62,7 +61,6 @@ function SubscriptionItem({ subscription }: SubscriptionItemProps) {
       <TableCell>
         <Badge className={statusColor}>{status}</Badge>
       </TableCell>
-      <TableCell>{subscription.startDate}</TableCell>
     </TableRow>
   );
 }

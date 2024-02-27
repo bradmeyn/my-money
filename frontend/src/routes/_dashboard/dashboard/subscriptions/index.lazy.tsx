@@ -24,16 +24,12 @@ export default function SubscriptionPage() {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         <Card>
-          <h2 className="text-md text-slate-500 font-semibold">
-            Active Subscriptions
-          </h2>
+          <h2>Active Subscriptions</h2>
           <p className="text-3xl font-semibold">{activeSubscriptions.length}</p>
         </Card>
 
         <Card>
-          <h2 className="text-md text-slate-500 font-semibold">
-            Monthly Spend
-          </h2>
+          <h2>Monthly Spend</h2>
           <p className="text-3xl font-semibold">
             {formatAsCurrency(monthlyTotal)}
           </p>
