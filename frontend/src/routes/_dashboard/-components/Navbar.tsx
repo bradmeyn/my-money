@@ -1,26 +1,17 @@
 import { Link } from "@tanstack/react-router";
-import { RiMoneyDollarCircleFill } from "@remixicon/react";
+import { RiPieChartLine } from "@remixicon/react";
 
 export default function Navbar() {
   const links = [
     {
-      name: "Home",
+      name: "Dashboard",
       href: "/dashboard",
-    },
-    {
-      name: "Subscriptions",
-      href: "/dashboard/subscriptions",
-    },
-
-    {
-      name: "Budget",
-      href: "/dashboard/budget",
     },
   ];
 
   return (
-    <nav className="flex p-4 fixed sm:static sm:h-full sm:flex sm:flex-col bottom-1 w-full sm:w-[300px] rounded-lg bg-slate-700">
-      <div className="mb-10 text-4xl font-semibold p-4 text-white">MyMoney</div>
+    <nav className="flex p-4 fixed sm:static sm:h-full rounded sm:flex sm:flex-col bottom-1 w-full  bg-slate-700">
+      <div className="mb-10 text-xl font-semibold  text-white">App</div>
       <ul className="flex sm:flex-col gap-1 w-full">
         {links.map((link) => (
           <NavbarLink key={link.href} name={link.name} href={link.href} />
@@ -43,12 +34,12 @@ export function NavbarLink({ name, href }: NavbarLinkProps) {
         activeOptions={{ exact: true }}
         activeProps={{
           className:
-            "bg-tremor-brand text-slate-100 rounded-lg text-white hover:text-white ",
+            "bg-tremor-brand text-slate-100  text-white hover:text-white ",
         }}
-        inactiveProps={{ className: "text-slate-100 hover:text-indigo-300" }}
-        className="mb-3 p-2 font-semibold flex gap-4 transition-all duration-200 ease-in-out rounded-lg "
+        inactiveProps={{ className: "text-slate-100 hover:text-yellow" }}
+        className="mb-3 text-sm p-2 rounded font-semibold flex gap-4 transition-all duration-200 ease-in-out"
       >
-        <RiMoneyDollarCircleFill className="inline-block" />
+        <RiPieChartLine className="inline-block" size={20} />
         <span>{name}</span>
       </Link>
     </li>

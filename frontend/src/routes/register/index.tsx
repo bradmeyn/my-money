@@ -1,19 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/")({
-  component: Index,
+export const Route = createFileRoute("/register/")({
+  component: RegisterPage,
 });
 
-export default function Index() {
+export default function RegisterPage() {
   return (
     <>
       <header className="flex justify-between container py-4">
         <span className="text-slate-900 font-bold">App</span>
         <Link
-          to="/dashboard"
+          to="/login"
           className="rounded-full bg-tremor-brand text-white py-2 px-4 font-semibold text-sm"
         >
-          Dashboard
+          Login
         </Link>
       </header>
 
